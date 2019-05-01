@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> Jogo da Velha com JS</title>
+		
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ </head>
+
+ <body>
+
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-sm-6 col-md-4 col-lg-4">
+
+	<fieldset>
+		<legend> Jogadores </legend>
+		<label for="Jogador 1"> Jogador 1: </label>
+		<input type="text" id="jogador1"/>
+		<label for="Jogador 1"> Jogador 2: </label>
+		<input type="text" id="jogador2"/>
+
+		<input type="button" class="button" value="Iniciar" onclick="javascript: initGame();"/>
+	</fieldset>
+
+
+	</div>
+	
+	<div class="col-sm-6 col-md-8 col-lg-8">
+	<h3 id="jogadorAtual"> </h3>
+
+<div id="game">
+	<table cellpadding="0" cellspacing="0">
+		<tr border="1"> 
+			<td onclick="javascript: setOnCeil(this, 0);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 1);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 2);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+		</tr>
+		<tr> 
+			<td onclick="javascript: setOnCeil(this, 3);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 4);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 5);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+		</tr>
+		<tr> 
+			<td onclick="javascript: setOnCeil(this, 6);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 7);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+			<td onclick="javascript: setOnCeil(this, 8);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'grey'"> &nbsp; </td>
+		</tr>
+	</table>
+
+	<input class="button" value="Reiniciar" onclick="javascript: reset();"/>
+</div>
+</div>
+
+
+</div>
+
+</div>
+		
+<script type="text/javascript" src="js/scripts.js"></script>
+  
+ </body>
+</html>

@@ -1,0 +1,55 @@
+table {
+    width: 550px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+table tr { 
+    background-color: grey;
+    font: bold 46px Verdana;
+    color: white;
+}
+
+table tr td {
+    text-align: center;
+    width: 33.33%;
+}
+
+table tr td:hover {
+    cursor: pointer;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top:4px;
+    height:50px;
+    width:265px;
+    font-size:20px;
+    letter-spacing: 2px;
+    background-color: black;
+    color: #fff;
+    text-align: center;    
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.button:hover {
+    color: rgb(218, 68, 68);
+}
+
+fieldset {
+    font-size:20;
+    font-weight:bold;
+    border:2px solid blue;
+    width: 300px;
+    margin-bottom:25px;
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.row {
+    display: inline-block;
+    margin: 0 auto;
+}
